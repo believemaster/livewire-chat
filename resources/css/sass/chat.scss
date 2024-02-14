@@ -1,5 +1,5 @@
 // Imports
-@import 'breakpoints';
+@import "breakpoints";
 
 .chat_container {
     position: fixed;
@@ -27,7 +27,7 @@
         height: 60px;
         display: flex;
         flex-wrap: nowrap;
-        
+
         .title {
             font-size: 19px;
             display: flex;
@@ -37,7 +37,7 @@
             text-align: center;
         }
 
-        .img_container {    
+        .img_container {
             height: 44px;
             width: 44px;
             margin: auto;
@@ -53,6 +53,70 @@
         }
     }
     .chat_list_body {
+        .chatlist_item {
+            padding: 2px 8px;
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+
+            .chatlist_img_container {
+                height: 47px;
+                width: 47px;
+                margin: auto;
+                margin-left: auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border-right: 1px solid gray;
+                }
+            }
+
+            .chatlist_info {
+                padding: 2px 5px;
+                width: 80%;
+                display: block;
+
+                .top_row {
+                    display: flex;
+                    width: 100%;
+                    margin: 3px 0px;
+
+                    .list_username {
+                        font-size: 16px;
+                        width: 80%;
+                    }
+
+                    .date {
+                        font-size: 13px;
+                        margin-left: auto;
+                    }
+                }
+
+                .bottom_row {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 100%;
+
+                    .message_body {
+                        width: 80%;
+                        font-weight: lighter;
+                        font-family: 'Roboto';
+                    }
+
+                    .unread_count {
+                        margin-left: auto;
+                        font-size: 13px;
+                        background-color: #ffffff;
+                        padding: 3px 8px;
+                        border-radius: 50%;
+                        color: rgb(255, 0, 0);
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
     }
 }
 
